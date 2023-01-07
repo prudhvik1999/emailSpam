@@ -1,0 +1,44 @@
+INFO:root:Dataset head : 
+
+INFO:root:                                                text  spam
+0  Subject: naturally irresistible your corporate...     1
+1  Subject: the stock trading gunslinger  fanny i...     1
+2  Subject: unbelievable new homes made easy  im ...     1
+3  Subject: 4 color printing special  request add...     1
+4  Subject: do not have money , get software cds ...     1
+INFO:root:
+ Number of missing data : 
+
+INFO:root:text    0
+spam    0
+dtype: int64
+INFO:root:
+ Dataset head after cleaning punctuation and stopwords and then tokenizing it into words : 
+
+INFO:root:0    [Subject, naturally, irresistible, corporate, ...
+1    [Subject, stock, trading, gunslinger, fanny, m...
+2    [Subject, unbelievable, new, homes, made, easy...
+3    [Subject, 4, color, printing, special, request...
+4    [Subject, money, get, software, cds, software,...
+Name: text, dtype: object
+INFO:root:
+ Prediction results (y_pred): 
+
+INFO:root:[1 0 0 ... 0 0 0]
+INFO:root:Classification report: 
+
+INFO:root:              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99       870
+           1       0.97      1.00      0.98       269
+
+    accuracy                           0.99      1139
+   macro avg       0.98      0.99      0.99      1139
+weighted avg       0.99      0.99      0.99      1139
+
+INFO:root:Confusion Matrix :
+
+INFO:root:[[862   8]
+ [  1 268]]
+INFO:root:Model accuracy:
+INFO:root:99.0
